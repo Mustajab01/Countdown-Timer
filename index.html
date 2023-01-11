@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Countdown Timer</h1>
+    </div>
+    <div id="container">
+        <div class="labels">
+            <p id="hour-label" class="label">H</p>
+            <p class="label">:</p>   
+            <p id="min-label" class="label">M</p>
+            <p class="label">:</p>  
+            <p id="sec-label" class="label">S</p>
+        </div>    
+        <div class="inputs">
+            <input type="number" class="time" id="hour" max="99" min="0" placeholder="00">
+            <p id="p1"  class="semicolon">:</p>
+            <input type="number" class="time" id="minute" max="60" min="0" placeholder="00">
+            <p id="p2"  class="semicolon">:</p>
+            <input type="number" class="time" id="second" max="60" min="0" placeholder="00">
+        </div>
+        <div class="buttons">    
+            <button id="start" class="btn">Start</button>
+            <button id="reset" class="btn">Reset</button>        
+        </div>    
+    </div>
+
+    <div class="credits">
+        <p>Made by: Mustajab Ali</p>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>

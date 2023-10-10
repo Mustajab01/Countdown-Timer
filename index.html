@@ -10,34 +10,18 @@
     <title>Countdown Timer</title>
 </head>
 <body>
-    <div class="heading">
+    <div class="container">
         <h1>Countdown Timer</h1>
-    </div>
-    <div id="container">
-        <div class="labels">
-            <p id="hour-label" class="label">H</p>
-            <p class="label">:</p>   
-            <p id="min-label" class="label">M</p>
-            <p class="label">:</p>  
-            <p id="sec-label" class="label">S</p>
-        </div>    
         <div class="inputs">
-            <input type="number" class="time" id="hour" max="99" min="0" placeholder="00">
-            <p id="p1"  class="semicolon">:</p>
-            <input type="number" class="time" id="minute" max="60" min="0" placeholder="00">
-            <p id="p2"  class="semicolon">:</p>
-            <input type="number" class="time" id="second" max="60" min="0" placeholder="00">
+            <input type="number" id="hour" min="0" placeholder="HH">
+            <input type="number" id="minute" min="0" max="59" placeholder="MM">
+            <input type="number" id="second" min="0" max="59" placeholder="SS">
         </div>
-        <div class="buttons">    
-            <button id="start" class="btn">Start</button>
-            <button id="reset" class="btn">Reset</button>        
-        </div>    
+        <div class="buttons">
+            <button id="startBtn">Start</button>
+            <button id="resetBtn">Reset</button>
+        </div>
     </div>
-
-    <div class="credits">
-        <p>Made by: Mustajab Ali</p>
-    </div>
-
-    <script src="app.js" type="module"></script>
+    <script src="app.js"></script>
 </body>
 </html>
